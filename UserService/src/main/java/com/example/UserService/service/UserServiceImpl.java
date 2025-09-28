@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService{
         return user;
     }
     public User deleteuser(Integer id){
-        User user=userrepo.findById(id).orElseThrow(()->new ResourceNotFoundException("Given user id is not present"+id));
+        nitish1816/microservice      User user=userrepo.findById(id).orElseThrow(()->new ResourceNotFoundException("Given user id is not present"+id));
       //  return userrepo.deleteById(id).orElseThrow(()->new ResourceNotFoundException("Given user id not found to delete"+id));
       userrepo.deleteById(id);
       return user;
