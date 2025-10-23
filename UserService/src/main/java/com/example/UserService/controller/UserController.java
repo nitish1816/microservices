@@ -26,7 +26,9 @@ public class UserController {
     @GetMapping("/getuser/{id}")
     public ResponseEntity<User> getuser(@PathVariable("id") Integer id){
         User user=userservice.getuser(id);
+
         System.out.println("hello test");
+
         return ResponseEntity.ok(user);
     }
     //get all user
