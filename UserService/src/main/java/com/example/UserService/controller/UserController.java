@@ -27,7 +27,9 @@ public class UserController {
     public ResponseEntity<User> getuser(@PathVariable("id") Integer id){
         User user=userservice.getuser(id);
 
-        System.out.println("hello main test");
+
+        System.out.println("hello test");
+
 
         return ResponseEntity.ok(user);
     }
